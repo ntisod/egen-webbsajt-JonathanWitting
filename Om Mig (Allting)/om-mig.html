@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <head>
-<<<<<<< Updated upstream
-    <meta chasrset="utf-8"/><!--TL: Jätteviktigt att inte stava fel. Det heter charset (char är en förkortning för character, dvs bokstav eller tecken. -->
-=======
     <meta charset="utf-8"/>
->>>>>>> Stashed changes
     <title>Om Mig : Jonathan Witting Jakhammer</title>
+    <link href="om-mig.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <!--Jag (Jonathan Witting Jakhammer) har gjort denna sida som en inlämningsuppgift 2019-->
 
 <body>
-    <h1>Jonathan Witting Jakhammer</h1>
+    <aside>
+        <main>
+            <h1>Jonathan Witting Jakhammer</h1>
+            
+            <nav>
+                <ul id="BildLänkarLeft">
+                    <li><a href="https://www.ntigymnasiet.se/sodertalje" target="_blank">NTI Gymnasiet</a></li>
+                    <li><a href="#Bakgrund">Bakgrund</a></li>
+                    <li><a href="#AlltOmMig">Fakta Om Mig</a></li>
+                </ul>
+                
+                <img class="imagejwj" src="Bilder/jwj2019instagrampc.jpg" alt="Jonathan WJ Selfie"/>
+                
+                <ul id="BildLänkarRight">
+                    <li><a href="#Favorit spel">Favorit Spel</a></li>
+                    <li><a href="#Fakta om mina intressen">Intressen</a></li>
+                    <li><a href="#Sociala medier">Sociala Medier</a></li>
+                </ul>
 
-    <p>
-        <img src="Bilder/jwj2019instagrampc.jpg" alt="Jonathan WJ Selfie" width="100"/><!--TL: Ändra helst storleken på bilden i Photoshop i första hand. Annars tar man upp onödig bandbredd, eller får fel kvalitet. I andra hand bör man ange storleken med css, inte html -->
-    </p>
+            </nav>
 
-    <h2>Bakgrund</h2>
-    <p>
-        Jag föddes på Malmö sjukhus den 16 augusti 2002. Efter mina första två år i livet så flyttade jag och mina förälldrar till en lägenhet i Hagsätra.
-        Kort därefter fick jag en lillasyster som sedan fick namnet Emily. Ett år senare kom Marcus, min lillebror och då kände mina päron att det var dags för en större lägenhet.
-        Vi flyttade ännu en gång till en större lägenhet i Hagsätra där vi sedan bodde fram tills jag skulle börja i trean på grundskolan. Sen kom ännu ett syskon, nämligen Elvira
-        och nu bestämde sig mina förälldrar att det var dags för ett hus. Vi har nu bott i ett gult hus precis utanför Järna i 9 år.
-    </p>
+            <h2 id="Bakgrund">Bakgrund</h2>
+            <p class="stycke">
+                Jag föddes på Malmö sjukhus den 16 augusti 2002. Efter mina första två år i livet så flyttade jag och mina föräldrar till en lägenhet i Hagsätra.
+                Kort därefter fick jag en lillasyster som sedan fick namnet Emily. Ett år senare kom Marcus, min lillebror och då kände mina päron att det var dags för en större lägenhet.
+                Vi flyttade ännu en gång till en större lägenhet i Hagsätra där vi sedan bodde fram tills jag skulle börja i trean på grundskolan. Sen kom ännu ett syskon, nämligen Elvira
+                och nu bestämde sig mina föräldrar att det var dags för ett hus. Vi har nu bott i ett gult hus precis utanför Järna i 9 år.
+            </p>
 
-    <h3>Varför jag går på NTI Gymnasiet</h3>
-    <p>Jag går på NTI eftersom att det är ett bra ställe för inlärning av kunskaper inom programering och spelutveckling</p>
-    <p>
-        <a href="https://www.ntigymnasiet.se/sodertalje" target="_blank">Länk till nti Gymnasiet</a>
-        </p><!--TL: Lägg hellre länken kring texten NTI eller NTI Gymnasiet lite tidigare i texten. Du kan då ta bort hela det här stycket. -->
-    
-    <h2>Tankar om Framtiden</h2>
-    <p>Efter gymnasiet ska jag plugga vidare till spelutvecklare och sedan skapa ett spelföretag.</p>
+            <h3 id="Varför jag går på NTI Gymnasiet">Varför jag går på NTI Gymnasiet</h3>
+            <p class="MindreStycke">Jag går på NTI eftersom att det är ett bra ställe för inlärning av kunskaper inom programering och spelutveckling.</p>
 
-    <h3>Fakta om Mig</h3>
-    <ul>
-        <li>Ålder : 17år</li>
-        <li>Längd : 189cm</li>
-        <li>Kön : Man</li>
-        <li>Test</li>
-    </ul>
+            <h2>Tankar om Framtiden</h2>
+            <p class="MindreStycke">Efter gymnasiet ska jag plugga vidare inom spelutveckling för att sedan bygga upp mitt spelföretag WitJak-Games.</p>
 
-    <h2>Extra Fakta Om Mina Intressen</h2>
+            <h2 id="AlltOmMig">Allt Om Mig</h2>
 
-    <h3>Favorit Spel</h3>
-    <ul>
-        <li>Minecraft</li>
-        <li>The Cycle</li>
-        <li>Rocket League</li>
-        <li>Duelyst</li>
-        <li>The Division</li>
-    </ul>
+            <h3 class="listor" id="Fakta om mig">Fakta</h3>
+            <ul class="listor">
+                <li>Ålder : 17år</li>
+                <li>Längd : 190.5cm</li>
+                <li>Kön : Man</li>
+                <li>Top 50 Solo Player : The Cycle</li>
+            </ul>
 
-    <h3>Sociala Medier : Jonathan Witting Jakhammer</h3>
-    <ul>
-        <li><a href="https://www.youtube.com/channel/UCnwi26wofblCPEZp9JsOPnQ" target="_blank">Youtube : Ripyserius</a></li>
-        <li>Länk till Dante Sparrås om mig sida</li>
-    </ul>
+            <h3 class="listor" id="Favorit spel">Favorit Spel</h3>
+            <ul class="listor">
+                <li>Minecraft</li>
+                <li>The Cycle</li>
+                <li>Rocket League</li>
+                <li>Duelyst</li>
+                <li>The Division</li>
+            </ul>
+
+            <h3 id="Sociala medier">Sociala Medier : Jonathan Witting Jakhammer</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCnwi26wofblCPEZp9JsOPnQ" target="_blank">Youtube : Ripyserius</a></li>
+                <li>Länk till Dante Sparrås om mig sida</li>
+            </ul>
+        </main>
+    </aside>
 </body>
