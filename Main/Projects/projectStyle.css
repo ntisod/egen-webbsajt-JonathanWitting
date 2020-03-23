@@ -1,0 +1,45 @@
+/* Bootstrap Begin */
+.jumbotron {
+    background-color:white;
+    color: gray;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+nav{
+    background-color: black;
+    height: 50px;
+}
+nav a {
+    color: white;
+    margin-left:10px ;
+}
+.dropdown-toggle-text{
+    color: black;
+}
+/* Bootstrap End */
+
+/* Projects Begin */
+.projectCards {
+    display: inline-flex;
+    text-align: center;
+}
+.li:nth-child(odd) {
+    display: unset;
+}
+/* Projects End */
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: white;
+}
+
+footer {
+    color: black;
+    text-align: center;
+}

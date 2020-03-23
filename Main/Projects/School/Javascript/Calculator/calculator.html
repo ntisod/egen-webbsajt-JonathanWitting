@@ -1,0 +1,69 @@
+<!-- Miniräknare -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Min CSS -->
+    <link rel="stylesheet" href="calculator.css">
+    <!-- Googles Ikoner -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Min Javascript -->
+    <script src="calculatorMain.js"></script>
+
+    <title>Calculator Jonathan</title>
+</head>
+<body>
+    <a href="../../../../../index.html"><button type="button">Homepage</button></a>
+
+    <h1>Miniräknare JWJ</h1>
+
+    <!-- Miniräknarens Grid -->
+    <ul class="gridContainer">
+        <!-- Fönstret som visar den nuvarande uträkningens innehåll -->
+        <ul class="windowContainer">
+            <li class="windowItem">
+                <p id="cWindowValue">0</p>
+            </li>
+            <li class="delButton" onclick="updateCalcField(0, 'Del_Item')"><i class="material-icons">backspace</i></li>
+        </ul>
+        
+        <!-- Knapparna som påverkar uträkningens innehåll -->
+        <ul class="buttonContainer">
+            <li class="buttonItem specialButton" onclick="updateCalcField([0, 'Empty'], 'Reset')">C</li>
+            <li class="buttonItem specialButton" onclick="updateCalcField([0, 'Empty'], 'Parenthesis')">()</li>
+            <li class="buttonItem opButton" onclick="updateCalcField(['%', 'Operator'])">%</li>
+            <li class="buttonItem opButton" onclick="updateCalcField(['/', 'Operator'])">/</li>
+    
+            <li class="buttonItem numButton" onclick="updateCalcField([7, 'Number'])">7</li>
+            <li class="buttonItem numButton" onclick="updateCalcField([8, 'Number'])">8</li>
+            <li class="buttonItem numButton" onclick="updateCalcField([9, 'Number'])">9</li>
+            <li class="buttonItem opButton" onclick="updateCalcField(['*', 'Operator'])">*</li>
+    
+            <li class="buttonItem numButton" onclick="updateCalcField([4, 'Number'])">4</li>
+            <li class="buttonItem numButton" onclick="updateCalcField([5, 'Number'])">5</li>
+            <li class="buttonItem numButton" onclick="updateCalcField([6, 'Number'])">6</li>
+            <li class="buttonItem opButton" onclick="updateCalcField(['-', 'Operator'])">-</li>
+    
+            <li class="buttonItem numButton" onclick="updateCalcField([1, 'Number'])">1</li>
+            <li class="buttonItem numButton" onclick="updateCalcField([2, 'Number'])">2</li>
+            <li class="buttonItem numButton" onclick="updateCalcField([3, 'Number'])">3</li>
+            <li class="buttonItem opButton" onclick="updateCalcField(['+', 'Operator'])">+</li>
+    
+            <li class="buttonItem unavailableButton" onclick="alert('Denna knapps funktion är ej färdig')">U</li>
+            <li class="buttonItem numButton" onclick="updateCalcField([0, 'Number'])">0</li>
+            <li class="buttonItem numButton" onclick="updateCalcField(['.', 'Dot'])">.</li>
+            <li class="buttonItem specialButton" onclick="getResult(true)">=</li>
+        </ul>
+    </ul>
+
+    <footer>
+        <!-- Datan som används i uträkningarna sparas alltid i dessa p-element -->
+        <!-- Denna data kan inte synas på skärmen men den uppdateras ständigt -->
+        <p id="calcA"> </p>
+        <p id="calcOperator"> </p>
+        <p id="calcB"> </p>
+    </footer>
+</body>
+</html>
