@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Min CSS -->
     <link rel="stylesheet" href="calculator.css">
+    <!-- Färgschema -->
+    <link rel="stylesheet" href="../../../../../colorComb.css">
     <!-- Googles Ikoner -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Min Javascript -->
@@ -20,7 +22,7 @@
     <h1>Miniräknare JWJ</h1>
 
     <!-- Miniräknarens Grid -->
-    <ul class="gridContainer">
+    <ul class="gridContainer theme-d5">
         <!-- Fönstret som visar den nuvarande uträkningens innehåll -->
         <ul class="windowContainer">
             <li class="windowItem">
@@ -30,10 +32,38 @@
         </ul>
         
         <!-- Knapparna som påverkar uträkningens innehåll -->
-        <ul class="buttonContainer">
+        <ul class="buttonContainer theme-d3">
+            <li class="buttonItem hover-theme" onclick="updateCalcField([0, 'Empty'], 'Reset')">C</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField(['(', 'Parenthesis'])">()</li>
+            <!-- <li class="buttonItem hover-theme" onclick="updateCalcField(['(', 'Parenthesis'], 'Parenthesis')">()</li> -->
+            <li class="buttonItem hover-theme" onclick="updateCalcField(['%', 'Operator'])">%</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField(['/', 'Operator'])">/</li>
+    
+            <li class="buttonItem hover-theme" onclick="updateCalcField([7, 'Number'])">7</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField([8, 'Number'])">8</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField([9, 'Number'])">9</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField(['*', 'Operator'])">*</li>
+    
+            <li class="buttonItem hover-theme" onclick="updateCalcField([4, 'Number'])">4</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField([5, 'Number'])">5</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField([6, 'Number'])">6</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField(['-', 'Operator'])">-</li>
+    
+            <li class="buttonItem hover-theme" onclick="updateCalcField([1, 'Number'])">1</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField([2, 'Number'])">2</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField([3, 'Number'])">3</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField(['+', 'Operator'])">+</li>
+    
+            <li class="buttonItem unavailableButton" onclick="alert('Denna knapps funktion är ej färdig')">U</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField([0, 'Number'])">0</li>
+            <li class="buttonItem hover-theme" onclick="updateCalcField(['.', 'Dot'])">.</li>
+            <li class="buttonItem hover-theme" onclick="getResult(true)">=</li>
+        </ul>
+        
+        <!-- <ul class="buttonContainer">
             <li class="buttonItem specialButton" onclick="updateCalcField([0, 'Empty'], 'Reset')">C</li>
             <li class="buttonItem specialButton" onclick="updateCalcField([0, 'Empty'], 'Parenthesis')">()</li>
-            <li class="buttonItem opButton" onclick="updateCalcField(['%', 'Operator'])">%</li>
+            <li class="buttonItem opButton theme-l3" onclick="updateCalcField(['%', 'Operator'])">%</li>
             <li class="buttonItem opButton" onclick="updateCalcField(['/', 'Operator'])">/</li>
     
             <li class="buttonItem numButton" onclick="updateCalcField([7, 'Number'])">7</li>
@@ -55,7 +85,7 @@
             <li class="buttonItem numButton" onclick="updateCalcField([0, 'Number'])">0</li>
             <li class="buttonItem numButton" onclick="updateCalcField(['.', 'Dot'])">.</li>
             <li class="buttonItem specialButton" onclick="getResult(true)">=</li>
-        </ul>
+        </ul> -->
     </ul>
 
     <footer>
@@ -64,6 +94,7 @@
         <p id="calcA"> </p>
         <p id="calcOperator"> </p>
         <p id="calcB"> </p>
+        <p id="parenthesisAmount">0</p>
     </footer>
 </body>
 </html>

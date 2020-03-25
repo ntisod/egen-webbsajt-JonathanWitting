@@ -4,9 +4,15 @@
 //#region TODO
 
 // Adda support för [%]
-// Fixa ett riktigt color-scheme istället för debug-mode färger
+// Fixa Med [()] Uträkningar
 
 //#endregion TODO
+
+// ------------------------------------------------------------------------------------------------------------------------
+
+//#region Checker-Functions
+function isOddNumber(pOddNum) { return (pOddNum % 2) == 1; } // Om Modulus 2 av (Possible-Odd-Number) == 1: return True
+//#endregion Checker-Functions
 
 // ------------------------------------------------------------------------------------------------------------------------
 
@@ -63,8 +69,23 @@ function updateCalcField(paramList, operation="Add_Item") {
             document.getElementById("cWindowValue").innerText = paramList[0];
         }
         else {
+            var newItemToAdd = null;
+
+            if (paramList[1] == "Parenthesis") {
+                var parenAmount = document.getElementById("parenthesisAmount").innerText;
+                parenAmount = parseInt(parenAmount);
+                alert(parenAmount);
+
+                if (isOddNumber(parenAmount)) { newItemToAdd = ")"; }
+                else { newItemToAdd = "("; }
+
+                var newParenAmount = parenAmount + 1;
+                document.getElementById("parenthesisAmount").innerText = newParenAmount;
+            }
+            else { newItemToAdd = paramList[0]; }
+
             // Lägger till det som finns i param till fönstret
-            document.getElementById("cWindowValue").innerText = cCalcWindow + paramList[0];
+            document.getElementById("cWindowValue").innerText = cCalcWindow + newItemToAdd;
         }
 
         // Spara värdet för framtida uträkning
@@ -120,6 +141,7 @@ function updateCalcField(paramList, operation="Add_Item") {
         document.getElementById("calcA").innerText = "";
         document.getElementById("calcOperator").innerText = "";
         document.getElementById("calcB").innerText = "";
+        document.getElementById("parenthesisAmount").innerText = "0";
     }
 }
 
