@@ -1,13 +1,6 @@
 // Jonathan Witting Jakhammer
 // 18/3 - 2020
 
-//#region TODO
-
-// Adda support för [%]
-// Fixa Med [()] Uträkningar
-
-//#endregion TODO
-
 // ------------------------------------------------------------------------------------------------------------------------
 
 //#region Checker-Functions
@@ -31,6 +24,11 @@ function calcResult(a, b, operatorType) {
     else if (operatorType == "/") {
         cResult = a / b;
     }
+    else if (operatorType == "%") {
+        cResult = b / a;
+        cResult *= 100;
+    }
+
 
     return cResult;
 }
