@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    color: white;
+    display: grid;
+}
+
+nav {
+    background-color: gray;
+}
+
+/* Phone */
+@media only screen and (max-width: 500px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Ipad */
+@media only screen and (min-width: 600px) {
+    body {
+        grid-template-columns: 100px auto;
+    }
+
+    header {
+        grid-column: span 2;
+    }
+    nav {
+        grid-row: span 2;
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 1024px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header {grid-column: span 3;}
+    nav {grid-column: span 3;}
+    .navbar-ul {
+        grid-column: span 3;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    .navbar-li {
+        float: left;
+    }
+    .navbar-li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .navbar-li a:hover {
+        background-color: #111;
+    }
+
+    .project_card-ul {
+        grid-column: span 3;
+        list-style-type: none;
+    }
+    .project-img {
+        float: left;
+        width: 100px;
+        height: 200px;
+    }
+    .project_card-li img {
+        grid-column: span 3;
+    }
+    
+    footer {grid-column: span 2;}
+}
