@@ -30,6 +30,26 @@ body {
     background-color: white;
 }
 
+/* Main-Site-Section Start */
+main {
+    background-color: gray;
+}
+#jonathan_profile-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+img {
+    grid-column: 1 span 1;
+    width: 50%;
+}
+p {
+    float: right;
+    grid-column: 2;
+    width: 50%;
+}
+/* Main-Site-Section End */
+
 footer {
     color: black;
     text-align: center;

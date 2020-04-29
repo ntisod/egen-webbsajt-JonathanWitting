@@ -8,6 +8,10 @@ nav {
     background-color: gray;
 }
 
+main {
+    grid-column: 1/-1;
+}
+
 /* Phone */
 @media only screen and (max-width: 500px) {
     body {
@@ -32,13 +36,13 @@ nav {
 /* PC */
 @media only screen and (min-width: 1024px) {
     body {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    header {grid-column: span 3;}
-    nav {grid-column: span 3;}
+    header {grid-column: 1/-1;}
+    nav {grid-column: 1/-1;}
     .navbar-ul {
-        grid-column: span 3;
+        grid-column: 1/-1;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -60,17 +64,20 @@ nav {
     }
 
     .project_card-ul {
-        grid-column: span 3;
+        grid-column: 1/-1;
+        margin: 0;
+        padding: 0;
         list-style-type: none;
+        display: flex;
+    }
+    .project_card-li {
+        float: left;
+        grid-column: 4;
     }
     .project-img {
-        float: left;
-        width: 100px;
-        height: 200px;
-    }
-    .project_card-li img {
-        grid-column: span 3;
+        width: 100%;
+        height: 100%;
     }
     
-    footer {grid-column: span 2;}
+    footer {grid-column: 1/-1;}
 }
