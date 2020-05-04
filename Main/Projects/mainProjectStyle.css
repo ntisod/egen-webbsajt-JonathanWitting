@@ -64,15 +64,17 @@ main {
     }
 
     .project_card-ul {
-        grid-column: 1/-1;
+        /* grid-column: 1/-1; */
+        grid-column: 2 span 4;
         margin: 0;
         padding: 0;
         list-style-type: none;
-        display: flex;
+        /* display: flex; */
     }
     .project_card-li {
+        width: 50%;
+        height: 100%;
         float: left;
-        grid-column: 4;
     }
     .project-img {
         width: 100%;

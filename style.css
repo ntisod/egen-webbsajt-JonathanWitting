@@ -22,10 +22,6 @@ nav a {
 }
 /* Bootstrap End */
 
-h1 {
-    text-align: center;
-}
-
 body {
     background-color: white;
 }
@@ -36,17 +32,42 @@ main {
 }
 #jonathan_profile-card {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    background-color: indianred;
     
 }
-img {
-    grid-column: 1 span 1;
+#skolfoto {
+    grid-column: 1 span 2;
     width: 50%;
+    padding: 20px;
+    border-radius: 50%;
 }
-p {
-    float: right;
-    grid-column: 2;
-    width: 50%;
+#jonathan_beskrivning {
+    grid-column: span auto;
+    background-color: hotpink;
+}
+
+#project_section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: blue;
+}
+.project_card-ul {
+    /* grid-column: 1/-1; */
+    grid-column: 4 span auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /* display: flex; */
+}
+.project_card-li {
+    width: 100%;
+    height: 100%;
+    /* float: left; */
+}
+.project-img {
+    width: 100%;
+    height: 100%;
 }
 /* Main-Site-Section End */
 
