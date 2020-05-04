@@ -34,7 +34,7 @@ main {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
     background-color: indianred;
-    
+    margin-bottom: 10px; /* Detta är det gråa strecket på sidan (ska användas senare) */
 }
 #skolfoto {
     grid-column: 1 span 2;
@@ -44,6 +44,9 @@ main {
 }
 #jonathan_beskrivning {
     grid-column: span auto;
+    padding: 15px;
+    text-align: center;
+    text-align: center;
     background-color: hotpink;
 }
 
@@ -63,12 +66,31 @@ main {
 .project_card-li {
     width: 100%;
     height: 100%;
+    text-align: center;
+    grid-column: span 1;
+    position: relative;
+    color: white;
     /* float: left; */
 }
 .project-img {
     width: 100%;
     height: 100%;
 }
+.card_title-p {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* #project-a {
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+}
+#project-a:hover {
+    background-color: chartreuse;
+} */
+
 /* Main-Site-Section End */
 
 footer {
