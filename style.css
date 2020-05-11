@@ -20,7 +20,8 @@ nav {
     display: block;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: violet;
+    background-color: #456f93;
+    color: white;
 }
 .navbar-li .navbar-a:hover {
     background-color: turquoise;
