@@ -5,45 +5,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- My CSS -->
+    <!-- Base CSS -->
     <link rel="stylesheet" type="text/css" href="../../style.css">
+    <!-- Google_Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ColorComb_CSS Link -->
+    <link rel="stylesheet" href="colorComb.css">
     <title>Jonathan CV</title>
 </head>
 <body>
     <!-- Nav-Bar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a href="../../index.html"><span style="font-weight:bold"><img style="width: 50px;" src="../../SiteImages/Jonathan/SimpleLogo_JWJ.png" alt=""></a>
-            <a href="InternetsHistoria/InfoSidor/infoMain.html"><span style="font-weight:bold">Internets Historia</span></a>
-          </div>
-     
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Jonathan<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a class = "dropdown-toggle-text" href="../../Main/Jonathan/aboutMe.html">About Me</a></li>
-                  <li><a class = "dropdown-toggle-text" href="../../Main/Jonathan/cv.html">CV</a></li>
-                </ul>
-            </li>
-
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-                 <ul class="dropdown-menu">
-                    <li><a class = "dropdown-toggle-text" href="../../Main/Projects/Games/gamesMain.html">Games</a></li>
-                    <li><a class = "dropdown-toggle-text" href="../../Main/Projects/Other/tempOtherMain.html">Others</a></li>
-                </ul>
-            <li>
-          </ul>
-        </div>
-      </nav>
+    <nav>
+      <ul class="navbar-ul theme-d1">
+          <li class="navbar-li"><a class="navbar-a material-icons" href="/index.html">home</a></li>
+          <li class="navbar-li"><a class="navbar-a material-icons" href="#">nature_people</a></li>
+          <li style="float: right;" class="navbar-li"><p class="openbtn navbar-a material-icons" onclick="toggleSidepanel()">menu</p></li>
+          <li id="mySidepanel" class="sidepanel navbar-li">
+              <a class="navbar-a closebtn" href="javascript:void(0)" onclick="hideSidepanel()">&times;</a>
+              <a class="navbar-a" href="../Jonathan/aboutMe.html">About Me 2020</a>
+              <a class="navbar-a" href="../../Old-Website/om-mig.html">About Me 2019</a>
+              <a class="navbar-a" href="#">CV</a>
+              <a class="navbar-a" href="../Projects/projectsMain.html">Projects</a>
+          </li>
+      </ul>
+  </nav>
     
     <!-- CV PDF -->
-    <iframe src="../../SiteImages/Jonathan/CV Jonathan WJ.pdf" frameborder="0" width="100%" height="720px"></iframe>
+    <iframe src="../../SiteImages/Jonathan/CV Jonathan WJ.pdf" frameborder="0" width="100%" height="900px"></iframe>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <footer>
+      <p>Jonathan Witting Jakhammer</p>
+      <p>jonathan.witjak@gmail.com</p>
+  </footer>
+
+  <!-- Base Script -->
+  <script src="../../script.js"></script>
 </body>
 </html>

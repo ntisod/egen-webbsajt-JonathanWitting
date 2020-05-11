@@ -8,6 +8,10 @@ nav {
     background-color: gray;
 }
 
+/* h1 {
+    text-align: center;
+} */
+
 main {
     grid-column: 1/-1;
 }
@@ -72,13 +76,21 @@ main {
         /* display: flex; */
     }
     .project_card-li {
-        width: 50%;
-        height: 100%;
+        width: 49%;
+        height: 98%;
+        margin: 5px;
         float: left;
+        position: relative;
     }
     .project-img {
         width: 100%;
         height: 100%;
+        border-radius: 1%;
+    }
+    .card_overlay {
+        position: absolute;
+        top: 4px;
+        left: 16px;
     }
     
     footer {grid-column: 1/-1;}

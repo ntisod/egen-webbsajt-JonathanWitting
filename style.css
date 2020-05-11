@@ -29,7 +29,7 @@ nav {
 
 /* Main_Sidepanel Start */
 .sidepanel {
-    height: 250px;
+    height: 220px;
     width: 0;
     position: fixed;
     z-index: 1; /* Render sidepanel on top of everything else */
@@ -59,7 +59,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 36px;
+    font-size: 28px;
     margin-left: 50px;
 }
 
