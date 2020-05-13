@@ -115,10 +115,12 @@ main {
 /* Slideshow Start */
 .slideshow_box {
     box-sizing: border-box;
+    padding: 8px;
 }
 
 .slideshow {
-    max-width: 1000px;
+    margin-top: 4px;
+    max-width: 1080px;
     position: relative;
     margin: auto;
 }
@@ -197,14 +199,17 @@ footer {
 /* Phone */
 @media only screen and (max-width: 500px) {
     #skolfoto img {
-        width: 388px;
+        width: 291px;
+    }
+    #jonathan_beskrivning {
+        padding-bottom: 4px;
     }
 }
 
 /* Ipad */
 @media only screen and (min-width: 600px) {
     #skolfoto img {
-        width: 388px;
+        width: 194px;
     }
 }
 
