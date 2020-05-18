@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../colorComb.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Google_Icons -->
     <title>MakingSpace</title>
 </head>
 <body>
-    <h1>Making Space - Project Page</h1>
+    <nav>
+        <ul class="navbar-ul theme-d1">
+            <li class="navbar-li"><a class="navbar-a material-icons" href="/index.html">home</a></li>
+            <li class="navbar-li"><a class="navbar-a material-icons" href="main/jonathan/aboutMe.html">nature_people</a></li>
+            <li class="navbar-li"><a class="navbar-a material-icons" href="https://github.com/JonathanWitting">work</a></li>
+            <li style="float: right;" class="navbar-li"><p class="openbtn navbar-a material-icons" onclick="toggleSidepanel()">menu</p></li>
+            <li id="mySidepanel" class="sidepanel navbar-li">
+                <a class="navbar-a closebtn" href="javascript:void(0)" onclick="hideSidepanel()">&times;</a>
+                <a class="navbar-a" href="main/jonathan/aboutMe.html">About Me 2020</a>
+                <a class="navbar-a" href="old_about_me/om-mig.html">About Me 2019</a>
+                <a class="navbar-a" href="main/jonathan/cv.html">CV</a>
+                <a class="navbar-a" href="main/projects/projectsMain.html">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="project_page-h1">Making Space</h1>
+
+    <div class="youtube_embed">
+        <iframe src="https://www.youtube.com/embed/LK6xHKjlDlM" frameborder="0"></iframe>
+    </div>
+
+    <footer>
+        <p>jonathan.witjak@gmail.com</p>
+    </footer>
+
+    <!-- Base Script -->
+    <script src="../../../script.js"></script>
 </body>
 </html>

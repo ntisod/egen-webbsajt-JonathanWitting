@@ -16,17 +16,20 @@ function toggleSidepanel() {
     isSidepanelOpen ? hideSidepanel() : showSidepanel();
 }
 
-// Slideshow
-// Clickable
-var slideIndex = 1;
-showSlides(slideIndex);
+// Slideshow Start
+try {
+  // Kolla om slides finns innan man kör slide-funktionen
+  var slideIndex = 1;
+  showSlides(slideIndex);
+} catch (error) {
+  console.log("No Slides Found")
+}
 
-// Next/previous controls
+// Next : Previous 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -34,32 +37,11 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slide");
-//   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
 }
-
-
-// Automatic
-// var slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("slideshow");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
+// Slideshow End
