@@ -209,9 +209,9 @@ footer {
 /* Specific Start */
 /* Phone */
 @media only screen and (max-width: 500px) {
-    body {
+    /* body {
         background-color: green;
-    }
+    } */
     #skolfoto img {
         width: 291px;
     }
@@ -226,9 +226,9 @@ footer {
 
 /* Ipad */
 @media only screen and (min-width: 600px) {
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
     #skolfoto img {
         width: 291px;
     }
@@ -257,9 +257,9 @@ footer {
 
 /* PC */
 @media only screen and (min-width: 1025px) {
-    body {
+    /* body {
         background-color: red;
-    }
+    } */
     #skolfoto img {
         width: 388px;
     }
