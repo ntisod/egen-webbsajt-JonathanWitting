@@ -197,6 +197,7 @@ main {
 #cv_pdf {
     width: 100%;
     height: 900px;
+    margin: auto;
 }
 
 .youtube_embed {
