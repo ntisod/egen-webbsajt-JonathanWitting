@@ -194,6 +194,11 @@ main {
 /* Slideshow End */
 
 /* Iframe Start */
+#cv_pdf {
+    width: 100%;
+    height: 900px;
+}
+
 .youtube_embed {
     text-align: center;
     width: 100%;
