@@ -45,3 +45,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 // Slideshow End
+
+// Change Profile-Image Depending On Screensize Start
+function changeProfileImage() {
+  if (screen.width < 500) {
+    document.getElementById("index_profil_bild").src = "site_images/jonathan/SkolFoto_Mobile.jpg";
+  }
+  else {
+    document.getElementById("index_profil_bild").src = "site_images/jonathan/SkolFoto.jpg";
+  }
+}
+
+changeProfileImage()
+// Change Profile-Image Depending On Screensize End
